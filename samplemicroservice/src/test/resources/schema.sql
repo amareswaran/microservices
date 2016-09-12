@@ -1,0 +1,1 @@
+create table widget(id int auto_increment primary key, name varchar(100), type varchar(100));

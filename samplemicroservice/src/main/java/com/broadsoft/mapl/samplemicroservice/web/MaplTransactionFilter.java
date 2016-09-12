@@ -1,4 +1,4 @@
-package com.broadsoft.mapl.samplemicroservice;
+package com.broadsoft.mapl.samplemicroservice.web;
 
 import java.io.IOException;
 
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Component;
 
-import com.broadsoft.mapl.samplemicroservice.utilities.MaplTransactionId;
+import com.broadsoft.mapl.MaplTransactionId;
 
 @Component
 public class MaplTransactionFilter implements Filter {

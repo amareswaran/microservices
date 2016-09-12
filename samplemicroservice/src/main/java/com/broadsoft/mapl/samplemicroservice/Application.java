@@ -5,10 +5,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-import com.broadsoft.mapl.samplemicroservice.log.MaplLoggerFactory;
+import com.broadsoft.mapl.MaplLoggerFactory;
 
 @SpringBootApplication
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 public class Application {
 	private static Logger logger = MaplLoggerFactory.getLogger(Application.class);
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.broadsoft.mapl.samplemicroservice.utilities;
+package com.broadsoft.mapl;
 
 import java.util.UUID;
 

@@ -1,4 +1,4 @@
-package com.broadsoft.mapl.samplemicroservice.log;
+package com.broadsoft.mapl;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -6,8 +6,6 @@ import java.lang.reflect.Proxy;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.broadsoft.mapl.samplemicroservice.utilities.MaplTransactionId;
 
 public class MaplLoggerFactory {
 	public static Logger getLogger(Class<?> c) {

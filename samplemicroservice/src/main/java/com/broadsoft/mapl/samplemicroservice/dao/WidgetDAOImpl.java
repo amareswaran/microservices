@@ -9,8 +9,9 @@ import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
-import com.broadsoft.mapl.samplemicroservice.log.MaplLoggerFactory;
+import com.broadsoft.mapl.MaplLoggerFactory;
 import com.broadsoft.mapl.samplemicroservice.model.WidgetModel;
 import com.broadsoft.mapl.samplemicroservice.service.WidgetDAOService;
 
@@ -22,6 +23,7 @@ public class WidgetDAOImpl implements WidgetDAOService {
 	private Logger logger = MaplLoggerFactory.getLogger(WidgetDAOImpl.class);
 	
 	@Override
+	@Transactional
 	public List<WidgetModel> getWidgets() {
 		logger.info("Get widgets request in DAO..!!");
 		Collection<Map<String, Object>> rows = jdbcTemplate.queryForList("SELECT ID,NAME,TYPE FROM WIDGET");
